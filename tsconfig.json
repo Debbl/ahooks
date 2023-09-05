@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "moduleResolution": "Node",
+    "jsx": "react",
+    "esModuleInterop": true,
+    "downlevelIteration": true,
+    "sourceMap": false,
+    "baseUrl": ".",
+    "rootDir": "src",
+    "outDir": "dist",
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "declaration": true,
+    "strictNullChecks": true,
+    "importHelpers": true,
+    "types": ["vitest/globals"]
+  },
+  "include": ["src/**/*"]
+}
