@@ -4,57 +4,86 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-dependencies:
-  react:
-    specifier: ^16.8.0 || ^17.0.0 || ^18.0.0
-    version: 18.2.0
+importers:
 
-devDependencies:
-  '@debbl/eslint-config':
-    specifier: ^0.0.57
-    version: 0.0.57(@typescript-eslint/parser@5.62.0)(eslint@8.48.0)(tailwindcss@3.3.3)(typescript@5.2.2)
-  '@testing-library/react':
-    specifier: ^14.0.0
-    version: 14.0.0(react-dom@18.2.0)(react@18.2.0)
-  '@types/react':
-    specifier: ^18.2.21
-    version: 18.2.21
-  '@vitejs/plugin-react':
-    specifier: ^4.0.4
-    version: 4.0.4(vite@4.4.9)
-  bumpp:
-    specifier: ^9.2.0
-    version: 9.2.0
-  eslint:
-    specifier: ^8.48.0
-    version: 8.48.0
-  jsdom:
-    specifier: ^22.1.0
-    version: 22.1.0
-  rimraf:
-    specifier: ^5.0.1
-    version: 5.0.1
-  rollup:
-    specifier: ^3.29.0
-    version: 3.29.0
-  rollup-plugin-dts:
-    specifier: ^6.0.1
-    version: 6.0.1(rollup@3.29.0)(typescript@5.2.2)
-  rollup-plugin-esbuild:
-    specifier: ^5.0.0
-    version: 5.0.0(esbuild@0.18.20)(rollup@3.29.0)
-  rollup-plugin-pure:
-    specifier: ^0.1.1
-    version: 0.1.1(rollup@3.29.0)
-  tslib:
-    specifier: ^2.6.2
-    version: 2.6.2
-  typescript:
-    specifier: ^5.2.2
-    version: 5.2.2
-  vitest:
-    specifier: ^0.34.3
-    version: 0.34.3(jsdom@22.1.0)
+  .:
+    devDependencies:
+      '@debbl/eslint-config':
+        specifier: ^0.0.57
+        version: 0.0.57(@typescript-eslint/parser@5.62.0)(eslint@8.48.0)(tailwindcss@3.3.3)(typescript@5.2.2)
+      '@testing-library/react':
+        specifier: ^14.0.0
+        version: 14.0.0(react-dom@18.2.0)(react@18.2.0)
+      '@vitejs/plugin-react':
+        specifier: ^4.0.4
+        version: 4.0.4(vite@4.4.9)
+      bumpp:
+        specifier: ^9.2.0
+        version: 9.2.0
+      eslint:
+        specifier: ^8.48.0
+        version: 8.48.0
+      tslib:
+        specifier: ^2.6.2
+        version: 2.6.2
+      typescript:
+        specifier: ^5.2.2
+        version: 5.2.2
+      vitest:
+        specifier: ^0.34.3
+        version: 0.34.3(jsdom@22.1.0)
+
+  packages/hooks:
+    dependencies:
+      react:
+        specifier: ^16.8.0 || ^17.0.0 || ^18.0.0
+        version: 18.2.0
+    devDependencies:
+      '@debbl/eslint-config':
+        specifier: ^0.0.57
+        version: 0.0.57(@typescript-eslint/parser@5.62.0)(eslint@8.48.0)(tailwindcss@3.3.3)(typescript@5.2.2)
+      '@testing-library/react':
+        specifier: ^14.0.0
+        version: 14.0.0(react-dom@18.2.0)(react@18.2.0)
+      '@types/react':
+        specifier: ^18.2.21
+        version: 18.2.21
+      '@vitejs/plugin-react':
+        specifier: ^4.0.4
+        version: 4.0.4(vite@4.4.9)
+      bumpp:
+        specifier: ^9.2.0
+        version: 9.2.0
+      eslint:
+        specifier: ^8.48.0
+        version: 8.48.0
+      jsdom:
+        specifier: ^22.1.0
+        version: 22.1.0
+      rimraf:
+        specifier: ^5.0.1
+        version: 5.0.1
+      rollup:
+        specifier: ^3.29.0
+        version: 3.29.0
+      rollup-plugin-dts:
+        specifier: ^6.0.1
+        version: 6.0.1(rollup@3.29.0)(typescript@5.2.2)
+      rollup-plugin-esbuild:
+        specifier: ^5.0.0
+        version: 5.0.0(esbuild@0.18.20)(rollup@3.29.0)
+      rollup-plugin-pure:
+        specifier: ^0.1.1
+        version: 0.1.1(rollup@3.29.0)
+      tslib:
+        specifier: ^2.6.2
+        version: 2.6.2
+      typescript:
+        specifier: ^5.2.2
+        version: 5.2.2
+      vitest:
+        specifier: ^0.34.3
+        version: 0.34.3(jsdom@22.1.0)
 
 packages:
 

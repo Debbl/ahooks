@@ -1,0 +1,48 @@
+{
+  "name": "@debbl/ahooks",
+  "version": "0.0.1-beta.0",
+  "description": "react hooks",
+  "author": "Debbl <me@aiwan.run> (https://github.com/Debbl)",
+  "license": "MIT",
+  "homepage": "https://github.com/Debbl/ahooks",
+  "repository": "https://github.com/Debbl/ahooks",
+  "keywords": [
+    "react",
+    "hooks"
+  ],
+  "main": "./dist/lib/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/lib/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "clean": "rimraf dist",
+    "build:cjs": "tsc -p ./tsconfig.build.json",
+    "build:esm": "tsc -p ./tsconfig.esm.json",
+    "build": "pnpm clean && pnpm build:cjs && pnpm build:esm",
+    "test": "vitest --run",
+    "lint": "eslint .",
+    "lint:fix": "eslint ."
+  },
+  "peerDependencies": {
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
+  },
+  "devDependencies": {
+    "@debbl/eslint-config": "^0.0.57",
+    "@testing-library/react": "^14.0.0",
+    "@types/react": "^18.2.21",
+    "@vitejs/plugin-react": "^4.0.4",
+    "bumpp": "^9.2.0",
+    "eslint": "^8.48.0",
+    "jsdom": "^22.1.0",
+    "rimraf": "^5.0.1",
+    "rollup": "^3.29.0",
+    "rollup-plugin-dts": "^6.0.1",
+    "rollup-plugin-esbuild": "^5.0.0",
+    "rollup-plugin-pure": "^0.1.1",
+    "tslib": "^2.6.2",
+    "typescript": "^5.2.2",
+    "vitest": "^0.34.3"
+  }
+}

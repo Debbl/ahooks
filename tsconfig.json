@@ -1,14 +1,15 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
     "moduleResolution": "Node",
     "jsx": "react",
+    "pretty": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
     "esModuleInterop": true,
     "downlevelIteration": true,
     "sourceMap": false,
     "baseUrl": ".",
-    "rootDir": "src",
-    "outDir": "dist",
     "allowSyntheticDefaultImports": true,
     "skipLibCheck": true,
     "declaration": true,
@@ -16,5 +17,5 @@
     "importHelpers": true,
     "types": ["vitest/globals"]
   },
-  "include": ["src/**/*"]
+  "include": ["packages/**/*", "**/tests"]
 }
