@@ -7,17 +7,18 @@
   "author": "Debbl <me@aiwan.run> (https://github.com/Debbl)",
   "license": "MIT",
   "scripts": {
-    "build": "turbo build",
-    "release": "turbo release && bumpp -r && pnpm -r publish",
-    "test": "turbo test",
-    "lint": "turbo lint",
-    "lint:fix": "turbo lint:fix"
+    "build": "dotenv -- turbo build",
+    "release": "dotenv -- turbo release && bumpp -r && pnpm -r publish",
+    "test": "dotenv -- turbo test",
+    "lint": "dotenv -- turbo lint",
+    "lint:fix": "dotenv -- turbo lint:fix"
   },
   "devDependencies": {
     "@debbl/eslint-config": "^0.0.57",
     "@testing-library/react": "^14.0.0",
     "@vitejs/plugin-react": "^4.0.4",
     "bumpp": "^9.2.0",
+    "dotenv-cli": "^7.3.0",
     "eslint": "^8.48.0",
     "tslib": "^2.6.2",
     "turbo": "^1.10.13",
