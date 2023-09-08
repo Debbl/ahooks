@@ -1,6 +1,6 @@
 {
   "name": "@debbl/ahooks-monorepo",
-  "version": "0.0.1-beta.0",
+  "version": "0.0.1-beta.1",
   "private": true,
   "description": "react hooks",
   "author": "Debbl <me@aiwan.run> (https://github.com/Debbl)",
