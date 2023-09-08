@@ -1,11 +1,13 @@
 {
   "$schema": "https://turbo.build/schema.json",
   "pipeline": {
+    "clean": {},
     "test": {},
     "lint": {},
     "lint:fix": {},
     "build": {
-      "dependsOn": ["test", "lint"]
+      "outputs": ["**/dist/**"],
+      "dependsOn": ["test", "lint", "clean"]
     },
     "release": {
       "dependsOn": ["build"]
