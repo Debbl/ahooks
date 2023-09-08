@@ -15,3 +15,5 @@ pnpm install @debbl/ahooks
 # Hooks
 
 - useLatest
+
+- useHydrated
