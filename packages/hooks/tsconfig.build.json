@@ -1,11 +1,9 @@
 {
-  "extends": "../../tsconfig.json",
+  "extends": "./tsconfig.json",
   "compilerOptions": {
     "target": "ES5",
     "module": "CommonJS",
-    "rootDir": "./src",
     "outDir": "dist/lib"
   },
-  "include": ["src/**/*"],
-  "exclude": ["tests", "**/*.test.ts"]
+  "exclude": ["**/tests", "**/*.test.ts"]
 }

@@ -14,8 +14,7 @@
     "skipLibCheck": true,
     "declaration": true,
     "strictNullChecks": true,
-    "importHelpers": true,
-    "types": ["vitest/globals"]
+    "importHelpers": true
   },
-  "include": ["packages/**/*", "**/tests"]
+  "include": ["packages"]
 }

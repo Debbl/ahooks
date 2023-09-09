@@ -1,9 +1,9 @@
-import { renderHook as renderHookSSR } from "@testing-library/react-hooks/server";
-import { renderHook as renderHookCSR } from "@testing-library/react-hooks/dom";
+import { renderHook } from "@testing-library/react";
 import useHydrated from ".";
+import { renderHookServer } from "~/tests/renderHookServer";
 
-const setUpSSR = () => renderHookSSR(() => useHydrated());
-const setUpCSR = () => renderHookCSR(() => useHydrated());
+const setUpSSR = () => renderHookServer(() => useHydrated());
+const setUpCSR = () => renderHook(() => useHydrated());
 
 describe("useLatest", () => {
   it("should return isHydrated false when rendering on the server", () => {
