@@ -2,7 +2,7 @@
   "name": "@debbl/ahooks-monorepo",
   "version": "0.0.3",
   "private": true,
-  "packageManager": "pnpm@8.7.1",
+  "packageManager": "pnpm@8.7.4",
   "description": "react hooks",
   "author": "Debbl <me@aiwan.run> (https://github.com/Debbl)",
   "license": "MIT",
@@ -19,10 +19,10 @@
     "@vitejs/plugin-react": "^4.0.4",
     "bumpp": "^9.2.0",
     "dotenv-cli": "^7.3.0",
-    "eslint": "^8.48.0",
+    "eslint": "^8.49.0",
     "tslib": "^2.6.2",
     "turbo": "^1.10.13",
     "typescript": "^5.2.2",
-    "vitest": "^0.34.3"
+    "vitest": "^0.34.4"
   }
 }
