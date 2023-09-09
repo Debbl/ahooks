@@ -6,35 +6,19 @@ const setUpSSR = () => renderHookSSR(() => useHydrated());
 const setUpCSR = () => renderHookCSR(() => useHydrated());
 
 describe("useLatest", () => {
-  it("should return isServer true when rendering on the server", () => {
+  it("should return isHydrated false when rendering on the server", () => {
     const { result } = setUpSSR();
-    expect(result.current.isServer).toBe(true);
+    expect(result.current.isHydrated).toBe(false);
   });
 
-  it("should return isBrowser false when rendering on the server", () => {
-    const { result } = setUpSSR();
-    expect(result.current.isBrowser).toBe(false);
-  });
-
-  it("should return isServer false when hydrated", () => {
+  it("should return isHydrated true when hydrated", () => {
     const { result, hydrate } = setUpSSR();
     hydrate();
-    expect(result.current.isServer).toBe(false);
+    expect(result.current.isHydrated).toBe(true);
   });
 
-  it("should return isBrowser true when hydrated", () => {
-    const { result, hydrate } = setUpSSR();
-    hydrate();
-    expect(result.current.isBrowser).toBe(true);
-  });
-
-  it("should return isServer false on the client", () => {
+  it("should return isHydrated true on the client", () => {
     const { result } = setUpCSR();
-    expect(result.current.isServer).toBe(false);
-  });
-
-  it("should return isBrowser true on the client", () => {
-    const { result } = setUpCSR();
-    expect(result.current.isBrowser).toBe(true);
+    expect(result.current.isHydrated).toBe(true);
   });
 });

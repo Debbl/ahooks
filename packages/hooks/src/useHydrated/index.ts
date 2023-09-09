@@ -1,19 +1,18 @@
 import { useEffect, useState } from "react";
 
 /**
- *  Return a object contains isBrowser and isServer to check if the component is hydrated or not.
- * @returns A object contains isBrowser and isServer
+ *  Get whether the component is hydrated or not.
+ * @returns A object with a isHydrated indicating whether the component is hydrated or not
  */
 const useHydrated = () => {
-  const [hydrated, setHydrated] = useState(false);
+  const [isHydrated, setIsHydrated] = useState(false);
 
   useEffect(() => {
-    setHydrated(true);
+    setIsHydrated(true);
   }, []);
 
   return {
-    isBrowser: hydrated,
-    isServer: !hydrated,
+    isHydrated,
   };
 };
 
