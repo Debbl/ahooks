@@ -1,13 +1,13 @@
 import React from "react";
 
 const useGitHubInfo = (link: string) => {
-  const GithubInfo = ({ className }: { className?: string }) => (
+  const GitHubInfo = ({ className }: { className?: string }) => (
     <div className={className}>
       <a href={link} target="_blank" rel="noreferrer">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="32"
-          height="32"
+          width="100%"
+          height="100%"
           viewBox="0 0 32 32"
         >
           <path
@@ -21,7 +21,7 @@ const useGitHubInfo = (link: string) => {
   );
 
   return {
-    GithubInfo,
+    GitHubInfo,
   };
 };
 
