@@ -1,6 +1,6 @@
 {
   "name": "@debbl/ahooks",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "packageManager": "pnpm@8.7.4",
   "description": "react hooks",
   "author": "Debbl <me@aiwan.run> (https://github.com/Debbl)",
