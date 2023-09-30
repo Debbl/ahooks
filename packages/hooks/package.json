@@ -1,7 +1,7 @@
 {
   "name": "@debbl/ahooks",
   "version": "0.0.9",
-  "packageManager": "pnpm@8.7.4",
+  "packageManager": "pnpm@8.8.0",
   "description": "react hooks",
   "author": "Debbl <me@aiwan.run> (https://github.com/Debbl)",
   "license": "MIT",
@@ -35,14 +35,14 @@
   "devDependencies": {
     "@debbl/eslint-config": "^0.0.57",
     "@testing-library/react": "^14.0.0",
-    "@types/react": "^18.2.21",
-    "@types/react-dom": "^18.2.7",
-    "@vitejs/plugin-react": "^4.0.4",
-    "eslint": "^8.49.0",
+    "@types/react": "^18.2.23",
+    "@types/react-dom": "^18.2.8",
+    "@vitejs/plugin-react": "^4.1.0",
+    "eslint": "^8.50.0",
     "jsdom": "^22.1.0",
-    "rimraf": "^5.0.1",
+    "rimraf": "^5.0.5",
     "tslib": "^2.6.2",
     "typescript": "^5.2.2",
-    "vitest": "^0.34.4"
+    "vitest": "^0.34.6"
   }
 }
