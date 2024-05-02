@@ -25,7 +25,8 @@
     "build": "pnpm build:cjs && pnpm build:esm",
     "test": "vitest --run",
     "lint": "eslint .",
-    "lint:fix": "eslint ."
+    "lint:fix": "eslint . --fix",
+    "typecheck": "tsc --noEmit"
   },
   "peerDependencies": {
     "react": "^16.8.0 || ^17.0.0 || ^18.0.0"

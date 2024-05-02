@@ -5,9 +5,10 @@
     "test": {},
     "lint": {},
     "lint:fix": {},
+    "typecheck": {},
     "build": {
       "outputs": ["**/dist/**"],
-      "dependsOn": ["test", "lint", "clean"]
+      "dependsOn": ["test", "lint", "clean", "typecheck"]
     },
     "release": {
       "dependsOn": ["build"]
