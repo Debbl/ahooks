@@ -1,3 +1,3 @@
-export { default as useLatest } from "./useLatest";
-export { default as useHydrated } from "./useHydrated";
-export { default as useGitHubInfo } from "./useGithubInfo/index";
+export { useLatest } from "./useLatest";
+export { useHydrated } from "./useHydrated";
+export { useGitHubInfo } from "./useGithubInfo/index";
