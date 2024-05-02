@@ -1,6 +1,6 @@
 import React from "react";
 
-const useGitHubInfo = (link: string) => {
+export const useGitHubInfo = (link: string) => {
   const GitHubInfo = ({ className }: { className?: string }) => (
     <div className={className}>
       <a href={link} target="_blank" rel="noreferrer">

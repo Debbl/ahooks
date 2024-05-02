@@ -5,7 +5,7 @@ import { useRef } from "react";
  * @param value - The value to be stored in the ref
  * @returns A ref object whose `.current` property is always set to the latest value passed to `useLatest`
  */
-const useLatest = <T>(value: T) => {
+export const useLatest = <T>(value: T) => {
   const ref = useRef(value);
   ref.current = value;
 

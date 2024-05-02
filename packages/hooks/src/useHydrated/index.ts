@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
  *  Get whether the component is hydrated or not.
  * @returns A object with a isHydrated indicating whether the component is hydrated or not
  */
-const useHydrated = () => {
+export const useHydrated = () => {
   const [isHydrated, setIsHydrated] = useState(false);
 
   useEffect(() => {
