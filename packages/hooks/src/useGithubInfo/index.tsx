@@ -1,6 +1,6 @@
 import React from "react";
 
-export const useGitHubInfo = (link: string) => {
+export function useGitHubInfo(link: string) {
   const GitHubInfo = ({ className }: { className?: string }) => (
     <div className={className}>
       <a href={link} target="_blank" rel="noreferrer">
@@ -23,6 +23,6 @@ export const useGitHubInfo = (link: string) => {
   return {
     GitHubInfo,
   };
-};
+}
 
 export default useGitHubInfo;
