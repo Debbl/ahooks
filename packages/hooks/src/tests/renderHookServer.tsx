@@ -12,7 +12,7 @@ export const renderHookServer = <Hook extends () => any>(
     wrapper: Wrapper,
   }: {
     wrapper?: ({ children }: { children: ReactNode }) => JSX.Element;
-  } = {}
+  } = {},
 ): { result: { current: ReturnType<Hook> }; hydrate: () => void } => {
   // Store hook return value
   const results: Array<ReturnType<Hook>> = [];
