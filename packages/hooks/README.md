@@ -19,3 +19,5 @@ pnpm install @debbl/ahooks
 - useHydrated
 
 - useRequestAnimationFrame
+
+- useOnceEffect
