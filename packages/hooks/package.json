@@ -2,7 +2,7 @@
   "name": "@debbl/ahooks",
   "type": "module",
   "version": "0.1.0",
-  "packageManager": "pnpm@9.0.6",
+  "packageManager": "pnpm@9.6.0",
   "description": "react hooks",
   "author": "Debbl <me@aiwan.run> (https://github.com/Debbl)",
   "license": "MIT",
@@ -35,14 +35,14 @@
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "@testing-library/react": "^15.0.6",
-    "@types/react": "^18.3.1",
+    "@testing-library/react": "^16.0.0",
+    "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
-    "@vitejs/plugin-react": "^4.2.1",
-    "jsdom": "^24.0.0",
-    "rimraf": "^5.0.5",
-    "tslib": "^2.6.2",
-    "typescript": "^5.4.5",
-    "vitest": "^1.5.3"
+    "@vitejs/plugin-react": "^4.3.1",
+    "jsdom": "^24.1.1",
+    "rimraf": "^6.0.1",
+    "tslib": "^2.6.3",
+    "typescript": "^5.5.4",
+    "vitest": "^2.0.5"
   }
 }

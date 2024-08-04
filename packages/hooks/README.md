@@ -17,3 +17,5 @@ pnpm install @debbl/ahooks
 - useLatest
 
 - useHydrated
+
+- useRequestAnimationFrame
