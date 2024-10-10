@@ -1,7 +1,7 @@
 import { renderHook } from "@testing-library/react";
 import { vi } from "vitest";
+import { useOnceEffect } from ".";
 import type { DependencyList, EffectCallback } from "react";
-import useOnceEffect from ".";
 
 describe("useOnceEffect", () => {
   it("should run the effect only once", () => {

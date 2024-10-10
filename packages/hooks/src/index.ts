@@ -1,5 +1,5 @@
-export { useLatest } from "./useLatest";
+export { useGitHubInfo } from "./useGithubInfo";
 export { useHydrated } from "./useHydrated";
-export { useGitHubInfo } from "./useGithubInfo/index";
-export { useOnceEffect } from "./useOnceEffect";
+export { useLatest } from "./useLatest";
 export { useMount } from "./useMount";
+export { useOnceEffect } from "./useOnceEffect";

@@ -1,5 +1,5 @@
-import type { DependencyList, EffectCallback } from "react";
 import { useEffect, useRef } from "react";
+import type { DependencyList, EffectCallback } from "react";
 
 /**
  * avoid running the effect multiple times when strict-mode is enabled

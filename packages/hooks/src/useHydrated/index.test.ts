@@ -1,6 +1,6 @@
 import { renderHook } from "@testing-library/react";
-import useHydrated from ".";
 import { renderHookServer } from "~/tests/renderHookServer";
+import { useHydrated } from ".";
 
 const setUpSSR = () => renderHookServer(() => useHydrated());
 const setUpCSR = () => renderHook(() => useHydrated());
