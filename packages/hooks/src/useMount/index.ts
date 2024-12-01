@@ -5,7 +5,9 @@ import { useEffect } from "react";
  * @param fn a effect callback to run on mount
  */
 export function useMount(fn: () => void) {
-  useEffect(() => fn?.(), []);
+  useEffect(() => {
+    fn?.();
+  }, []);
 }
 
 export default useMount;
