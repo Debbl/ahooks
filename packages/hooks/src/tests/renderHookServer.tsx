@@ -1,8 +1,7 @@
-import React from "react";
+import React, { act } from "react";
 import { hydrateRoot } from "react-dom/client";
 import { renderToString } from "react-dom/server";
-import { act } from "react-dom/test-utils";
-import type { ReactNode } from "react";
+import type { JSX, ReactNode } from "react";
 
 // https://github.com/testing-library/react-testing-library/issues/1120
 
