@@ -1,7 +1,7 @@
 {
   "name": "@debbl/ahooks-monorepo",
   "type": "module",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "private": true,
   "packageManager": "pnpm@9.15.0",
   "description": "react hooks",
