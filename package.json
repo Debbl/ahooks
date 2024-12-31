@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.3.4",
   "private": true,
-  "packageManager": "pnpm@9.15.0",
+  "packageManager": "pnpm@9.15.2",
   "description": "react hooks",
   "author": "Debbl <me@aiwan.run> (https://github.com/Debbl)",
   "license": "MIT",
@@ -16,9 +16,9 @@
     "typecheck": "turbo typecheck"
   },
   "devDependencies": {
-    "@debbl/eslint-config": "^3.8.4",
-    "bumpp": "^9.9.0",
-    "eslint": "^9.16.0",
+    "@debbl/eslint-config": "^3.8.6",
+    "bumpp": "^9.9.2",
+    "eslint": "^9.17.0",
     "turbo": "^2.3.3",
     "typescript": "^5.7.2"
   }
