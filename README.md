@@ -16,7 +16,7 @@ pnpm install @debbl/ahooks
 
 - [@debbl/ahooks](./packages/hooks/README.md)
 
-# Credit
+# Credits
 
 - [ahooks](https://github.com/alibaba/hooks)
 - [react-use](https://github.com/streamich/react-use)
