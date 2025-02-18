@@ -1,7 +1,7 @@
 {
   "name": "@debbl/ahooks",
   "type": "module",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "packageManager": "pnpm@10.4.1",
   "description": "react hooks",
   "author": "Debbl <me@aiwan.run> (https://github.com/Debbl)",
