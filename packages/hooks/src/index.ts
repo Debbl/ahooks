@@ -1,3 +1,4 @@
+export { useEffectEvent } from "./useEffectEvent";
 export { useGitHubInfo } from "./useGithubInfo";
 export { useHydrated } from "./useHydrated";
 export { useLatest } from "./useLatest";
