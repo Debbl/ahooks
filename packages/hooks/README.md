@@ -25,3 +25,5 @@ pnpm install @debbl/ahooks
 - useMount
 
 - useUnMount
+
+- useEffectEvent
