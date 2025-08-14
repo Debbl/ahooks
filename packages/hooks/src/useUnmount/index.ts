@@ -1,10 +1,10 @@
-import { useEffect } from "react";
-import useLatest from "../useLatest";
+import { useEffect } from 'react'
+import useLatest from '../useLatest'
 
 export function useUnmount(fn: () => void) {
-  const fnRef = useLatest(fn);
+  const fnRef = useLatest(fn)
 
-  useEffect(() => () => fnRef.current?.(), []);
+  useEffect(() => () => fnRef.current?.(), [])
 }
 
-export default useUnmount;
+export default useUnmount

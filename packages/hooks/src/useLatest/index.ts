@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef } from 'react'
 
 /**
  *  Returns a ref object whose `.current` property is always set to the latest value passed to `useLatest`.
@@ -6,10 +6,10 @@ import { useRef } from "react";
  * @returns A ref object whose `.current` property is always set to the latest value passed to `useLatest`
  */
 export function useLatest<T>(value: T) {
-  const ref = useRef(value);
-  ref.current = value;
+  const ref = useRef(value)
+  ref.current = value
 
-  return ref;
+  return ref
 }
 
-export default useLatest;
+export default useLatest

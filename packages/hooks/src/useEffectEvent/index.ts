@@ -1,4 +1,4 @@
-import { useCallback, useInsertionEffect, useRef } from "react";
+import { useCallback, useInsertionEffect, useRef } from 'react'
 
 /**
  * useEffectEvent is a React Hook that lets you extract non-reactive logic into an Effect Event.
@@ -13,15 +13,15 @@ import { useCallback, useInsertionEffect, useRef } from "react";
  * ```
  */
 export function useEffectEvent<T extends (...args: any[]) => void>(fn: T) {
-  const fnRef = useRef<T>(null);
+  const fnRef = useRef<T>(null)
 
   useInsertionEffect(() => {
-    fnRef.current = fn;
-  }, [fn]);
+    fnRef.current = fn
+  }, [fn])
 
   return useCallback((...args: Parameters<T>) => {
-    return fnRef.current?.(...args);
-  }, []);
+    return fnRef.current?.(...args)
+  }, [])
 }
 
-export default useEffectEvent;
+export default useEffectEvent
