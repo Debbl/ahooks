@@ -1,8 +1,10 @@
 {
   "compilerOptions": {
     "jsx": "react",
+    "lib": ["ESNext", "DOM"],
     "baseUrl": ".",
-    "moduleResolution": "Node",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
     "pretty": true,
     "strictNullChecks": true,
     "noImplicitReturns": true,
@@ -15,6 +17,5 @@
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "skipLibCheck": true
-  },
-  "include": ["packages"]
+  }
 }
