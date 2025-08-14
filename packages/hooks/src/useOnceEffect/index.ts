@@ -1,5 +1,5 @@
-import { useEffect, useRef } from "react";
-import type { DependencyList, EffectCallback } from "react";
+import { useEffect, useRef } from 'react'
+import type { DependencyList, EffectCallback } from 'react'
 
 /**
  * avoid running the effect multiple times when strict-mode is enabled
@@ -7,18 +7,18 @@ import type { DependencyList, EffectCallback } from "react";
  * @param deps useEffect dependencies
  */
 export function useOnceEffect(effect: EffectCallback, deps?: DependencyList) {
-  const record = useRef(new Set<EffectCallback>());
+  const record = useRef(new Set<EffectCallback>())
 
   const onceWrapper = () => {
-    const shouldStart = !record.current.has(effect);
+    const shouldStart = !record.current.has(effect)
 
     if (shouldStart) {
-      record.current.add(effect);
-      return effect();
+      record.current.add(effect)
+      return effect()
     }
-  };
+  }
 
-  useEffect(onceWrapper, deps);
+  useEffect(onceWrapper, deps)
 }
 
-export default useOnceEffect;
+export default useOnceEffect

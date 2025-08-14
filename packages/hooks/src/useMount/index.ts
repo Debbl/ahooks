@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect } from 'react'
 
 /**
  * A hook that executes a function after the component is mounted.
@@ -6,8 +6,8 @@ import { useEffect } from "react";
  */
 export function useMount(fn: () => void) {
   useEffect(() => {
-    fn?.();
-  }, []);
+    fn?.()
+  }, [])
 }
 
-export default useMount;
+export default useMount
