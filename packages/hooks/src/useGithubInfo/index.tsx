@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from 'react'
 
 // eslint-disable-next-line react/no-unnecessary-use-prefix
 export function useGitHubInfo(link: string) {

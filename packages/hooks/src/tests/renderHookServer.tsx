@@ -1,4 +1,5 @@
-import React, { act } from 'react'
+import * as React from 'react'
+import { act } from 'react'
 import { hydrateRoot } from 'react-dom/client'
 import { renderToString } from 'react-dom/server'
 import type { JSX, ReactNode } from 'react'
