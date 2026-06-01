@@ -2,7 +2,7 @@
   "name": "@debbl/ahooks",
   "type": "module",
   "version": "0.4.1",
-  "packageManager": "pnpm@10.30.2",
+  "packageManager": "pnpm@10.34.1",
   "description": "react hooks",
   "author": "Debbl <me@aiwan.run> (https://github.com/Debbl)",
   "license": "MIT",
